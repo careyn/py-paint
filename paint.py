@@ -12,6 +12,7 @@ def locate_cursor(event):
 def draw_line(event):
     global current_x, current_y
     canvas.create_line(current_x, current_y, event.x, event.y)
+    current_x, current_y = event.x, event.y
 
 
 window = Tk()
