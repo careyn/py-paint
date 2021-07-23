@@ -6,7 +6,6 @@ current_x, current_y = 0, 0
 def locate_cursor(event):
     global current_x, current_y
     current_x, current_y = event.x, event.y
-    print(current_x, current_y)
 
 
 def draw_line(event):
