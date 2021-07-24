@@ -1,11 +1,19 @@
 from tkinter import *
 
+color = 'black'
+
 current_x, current_y = 0, 0
 
 
 def locate_cursor(event):
     global current_x, current_y
     current_x, current_y = event.x, event.y
+
+
+def show_color(new_color):
+    global color
+
+    color = new_color
 
 
 def draw_line(event):
@@ -16,13 +24,7 @@ def draw_line(event):
 
 def new_canvas():
     canvas.delete('all')
-    display_pallet()
-
-
-def show_color(new_color):
-    global color
-
-    color = new_color
+    color_choice()
 
 
 window = Tk()
